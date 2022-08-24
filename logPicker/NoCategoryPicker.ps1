@@ -19,4 +19,6 @@ foreach ($input in $inputFiles){
             echo $line | Out-File $outputName -Encoding utf8 -Append
         }
     }
+
+    $inputFile.close()
 }
